@@ -8,15 +8,9 @@ LIBDIR = ./src
 LIBS = -Wl,-Bstatic \
 	  	 -Wl,-Bdynamic
 #	  -lrt -Wl,-Bdynamic
-
-
-
-
-
-
  
-#CFLAGS = -I/home/emmanouil/eigen-eigen-07105f7124f9/ -I/home/emmanouil/boost_1_60_0 -I$(USERDIR) -I$(LIBDIR)
-CFLAGS = -I"C:\c_libraries\eigen-eigen-dc6cfdf9bcec" -I"C:\c_libraries\boost_1_61_0" -I$(USERDIR) -I$(LIBDIR)
+CFLAGS = -I/usr/include/eigen3/Eigen/ -I/usr/lib/x86_64-linux-gnu/ -I$(USERDIR) -I$(LIBDIR)
+# CFLAGS = -I"C:\c_libraries\eigen-eigen-dc6cfdf9bcec" -I"C:\c_libraries\boost_1_61_0" -I$(USERDIR) -I$(LIBDIR)
 
 # Default code optimization level
 OPT = -O2
